@@ -6,7 +6,12 @@ const User = require('./modal/userSchema')
 const cors = require('cors')
 
 app.use(express.json())
-app.use(cors())
+app.use(cors(
+    {
+    origin:['http://localhost:3000'],
+    methods:['POST','GET'],
+    credentials: true
+}
 connectDb()
 
 app.post('/getData', async(req, res)=>{
