@@ -1,0 +1,118 @@
+
+
+
+
+    .i11{
+        display: flex;
+    }
+    
+    .input11{
+        border: none;
+        border-bottom: 1px solid black;
+        padding: .6rem;
+        margin: auto;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+
+
+.total1{
+    text-align: right;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 2rem;
+}
+
+.user-data-container {
+    overflow-x: auto;
+    padding: 10px 20px;
+}
+
+.search-input {
+    margin-bottom: 20px;
+}
+
+.input {
+    padding: 8px;
+    width: 100%;
+}
+
+.total-users {
+    margin-bottom: 20px;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: 8px;
+    text-align: left; /* Align text to the left */
+    border-bottom: 1px solid #ddd;
+}
+
+.del{
+    border: none;
+    background-color: red;
+    color: white;
+}
+
+.t1{
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    .user-data-container .username {
+        background-color: #f0f0f0;
+         /* Adjust the padding value as needed */
+    }
+    .table thead {
+        display: none;
+    }
+ 
+    .username{
+        background-color: '#f0f0f0' 
+    }
+   
+    .table td{
+        padding-left: 1rem;
+    }
+
+    .table,
+    .table tbody,
+    .table tr,
+    .table td {
+        display: block;
+        width: 100%;
+       
+    }
+
+    .table td {
+        text-align: right; /* Align text to the left */
+    }
+
+    .table td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        float: left;
+        text-transform: uppercase;
+    }
+
+    .table td:last-child {
+        border-bottom: 0;
+    }
+
+    .t1{
+        width: 100%;
+    }
+}
